@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(223, 178, 223, 0.349);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.2;
+}
+
+/* Logo and Image */
+#logo {
+    margin: 14px 15px;
+}
+
+#logo img {
+    margin: 0px 15px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+#navbar {
+    display: flex;
+    gap: 200px;
+}
+
+.item {
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item1 {
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 20px 20px 3px;
+}
+
+.item1:hover {
+    color: rgb(248, 11, 11);
+}
+
+.button {
+    background-color: rgb(214, 33, 33);
+    font-size: medium;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+
+    & a {
+        text-decoration: none;
+        color: rgb(242, 231, 231);
+    }
+}
+.button :hover{
+    font-size: large;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 200px;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Great Vibes', cursive;
+}
+/* Services Section */
+#services-container {
+    &>h1 {
+        padding: 175px 0px 0px 0px;
+    }
+}
+#services {
+    margin: 34px;
+    display: flex;
+
+}
+#services .box {
+    border: 2px solid rgb(179, 103, 116);
+    padding: 34px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(241, 221, 224);
+}
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+
+}
+#services .box p {
+    font-family: 'Almarai', sans-serif;
+}
+/* NEWS SECTION*/
+#news {
+    border: 1px solid rgb(212, 187, 236);
+    background-color: rgb(229, 220, 238);
+    margin: 15px;
+    border-radius: 10px;
+}
+#news p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+}
+#news1 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.box2 {
+    border: 1px solid rgb(206, 187, 224);
+    width: 300px;
+    height: 250px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 3px 3px rgb(206, 190, 228);
+}
+.box2 img {
+
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+.box2 h3 {
+    font-family: 'Almarai', sans-serif;
+    text-align: center;
+    text-shadow: 3px 4px 3px mediumaquamarine, 5px 7px 3px rgb(199, 165, 231);
+}
+/* CONTACT SECTION */
+#contact {
+    position: relative;
+    margin: 10px 0px 0px 0px;
+}
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/contact-us-gd744c0a5a_1280.jpg') no-repeat center center/cover;
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    font-family: 'Almarai', sans-serif;
+}
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+#submit {
+    border: 1px solid whitesmoke;
+    width: 280px;
+    height: 25px;
+    border-radius: 25px;
+}
+.submit {
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 3px 20px;
+}
+/* Utility classes */
+.btn {
+    padding: 5px 25px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    font-size: 1.1rem;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.baslik {
+    font-size: 3.3rem;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin: 15px 5px;
+}
+.baslik1 {
+    font-size: 3.3rem;
+    color: black;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.baslik2 {
+    font-size: 2.8rem;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin: 15px 5px;
+}
+.center {
+    text-align: center;
+}
